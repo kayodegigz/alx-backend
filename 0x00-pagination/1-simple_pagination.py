@@ -15,6 +15,7 @@ def index_range(page, page_size):
     tup = ((page - 1) * page_size, page * page_size)
     return tup
 
+
 class Server:
     """
     Server class to paginate a database of popular baby names.
@@ -38,7 +39,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        get_page that takes two integer arguments; page 
+        get_page that takes two integer arguments; page
         and page_size with default values 1 and 10
         this function uses index_range to find the correct index to paginate
         the dataset

@@ -40,7 +40,8 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-        """get_hyper_index return a dictionary containing the following key-value pairs:
+        """get_hyper_index returns a dict
+        containing the following key-value pairs:
         index: the current start index of the return page
         page_size: the current page size
         data: the dataset page (equivalent to return from previous task)
